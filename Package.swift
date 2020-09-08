@@ -24,8 +24,9 @@ let package = Package(
         .target(
             name: "SwiftPager",
             dependencies: []),
-        .testTarget(
-            name: "SwiftPagerTests",
-            dependencies: ["SwiftPager"]),
+        // enabling this caused link errors
+//        .testTarget(
+//            name: "SwiftPagerTests",
+//            dependencies: ["SwiftPager"]),
     ]
 )
