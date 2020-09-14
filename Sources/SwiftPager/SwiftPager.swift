@@ -14,7 +14,7 @@ public struct Pager<Content: View>: View {
     @State private var index: Int = 0
     @State private var dragAmount: CGFloat = 0
     
-    init(numPages: Int, @ViewBuilder content: () -> Content) {
+    public init(numPages: Int, @ViewBuilder content: () -> Content) {
         self.content = content()
         self.numPages = numPages
     }
